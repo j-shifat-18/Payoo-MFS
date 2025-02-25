@@ -33,7 +33,7 @@
         font-family: "Outfit", serif;
       }
 
-      .secondary-text{
+      .secondary-text {
         color: rgba(8, 8, 8, 0.5);
       }
     </style>
@@ -42,7 +42,9 @@
     <section class="max-w-md min-h-screen mx-auto py-6 primary-clr">
       <!-- navigation -->
       <section class="bg-white">
-        <nav class="flex justify-between items-center px-6 py-4 border-b-2 border-[rgba(8,8,8,0.1)]">
+        <nav
+          class="flex justify-between items-center px-6 py-4 border-b-2 border-[rgba(8,8,8,0.1)]"
+        >
           <div class="flex items-center gap-4">
             <img class="w-16" src="./images/Group.png" alt="" />
             <div>
@@ -50,73 +52,134 @@
               <p class="text-sm secondary-text">Available Balance</p>
             </div>
           </div>
-          <button class="btn rounded-lg secondary-text border-2">Log Out</button>
+          <button class="btn rounded-lg secondary-text border-2">
+            Log Out
+          </button>
         </nav>
       </section>
 
       <!-- service option section -->
-       <section class="py-6 px-6 bg-white rounded-b-3xl">
+      <section class="py-6 px-6 bg-white rounded-b-3xl">
         <div class="">
-            <h2 class="font-bold text-2xl mb-2">🔥Welcome to Payooo!</h2>
-            <p class="secondary-text">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+          <h2 class="font-bold text-2xl mb-2">🔥Welcome to Payooo!</h2>
+          <p class="secondary-text">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
         </div>
         <!-- cards -->
-         <div class="mt-6 grid grid-cols-3 gap-4">
-            <!-- card 1 -->
-            <div>
-                <button class="w-32 flex flex-col  py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2">
-                    <img class="w-6" src="./images/wallet1.png" alt="">
-                    <p class="secondary-text">Add Money</p>
-                </button>
-             </div>
-            <!-- card 2 -->
-             <div>
-                <button class="w-32 flex flex-col  py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2">
-                    <img class="w-6" src="./images/send1.png" alt="">
-                    <p class="secondary-text">Cashout</p>
-                </button>
-             </div>
-            <!-- card 3 -->
-             <div>
-                <button class="w-32 flex flex-col  py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2">
-                    <img class="w-6" src="./images/money1.png" alt="">
-                    <p class="secondary-text">Transfer Money</p>
-                </button>
-             </div>
-            <!-- card 4 -->
-             <div>
-                <button class="w-32 flex flex-col  py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2">
-                    <img class="w-6" src="./images/bonus1.png" alt="">
-                    <p class="secondary-text">Get Bonus</p>
-                </button>
-             </div>
-            <!-- card 5 -->
-             <div>
-                <button class="w-32 flex flex-col  py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2">
-                    <img class="w-6" src="./images/purse1.png" alt="">
-                    <p class="secondary-text">Pay Bill</p>
-                </button>
-             </div>
-            <!-- card 6 -->
-             <div>
-                <button class="w-32 flex flex-col  py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2">
-                    <img class="w-6" src="./images/transaction1.png" alt="">
-                    <p class="secondary-text">Transactions</p>
-                </button>
-             </div>
-         </div>
-       </section>
+        <div class="mt-6 grid grid-cols-3 gap-4">
+          <!-- card 1 -->
+          <div>
+            <button
+              class="w-32 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
+            >
+              <img class="w-6" src="./images/wallet1.png" alt="" />
+              <p class="secondary-text">Add Money</p>
+            </button>
+          </div>
+          <!-- card 2 -->
+          <div>
+            <button
+              class="w-32 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
+            >
+              <img class="w-6" src="./images/send1.png" alt="" />
+              <p class="secondary-text">Cashout</p>
+            </button>
+          </div>
+          <!-- card 3 -->
+          <div>
+            <button
+              class="w-32 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
+            >
+              <img class="w-6" src="./images/money1.png" alt="" />
+              <p class="secondary-text">Transfer Money</p>
+            </button>
+          </div>
+          <!-- card 4 -->
+          <div>
+            <button
+              class="w-32 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
+            >
+              <img class="w-6" src="./images/bonus1.png" alt="" />
+              <p class="secondary-text">Get Bonus</p>
+            </button>
+          </div>
+          <!-- card 5 -->
+          <div>
+            <button
+              class="w-32 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
+            >
+              <img class="w-6" src="./images/purse1.png" alt="" />
+              <p class="secondary-text">Pay Bill</p>
+            </button>
+          </div>
+          <!-- card 6 -->
+          <div>
+            <button
+              class="w-32 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
+            >
+              <img class="w-6" src="./images/transaction1.png" alt="" />
+              <p class="secondary-text">Transactions</p>
+            </button>
+          </div>
+        </div>
+      </section>
 
-       <!-- latest payment section -->
-        <section class="px-6 mt-6 mb-10">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="font-semibold text-lg">Latest Payment</h3>
-                <p class="text-sm secondary-text">View All</p>
+      <!-- latest payment section -->
+      <section class="px-6 mt-6 mb-10">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="font-semibold text-lg">Latest Payment</h3>
+          <p class="text-sm secondary-text">View All</p>
+        </div>
+        <!-- cards -->
+        <div class="grid gap-4">
+          <!-- card 1 -->
+          <div class="flex bg-white py-3 px-4 justify-between items-center rounded-xl">
+            <div class="flex gap-4 items-center">
+              <img class="w-6" src="./images/wallet1.png" alt="" />
+              <div>
+                <h3 class="font-semibold">Electricity Bill</h3>
+                <p class="secondary-text">Today 01:44 AM</p>
+              </div>
             </div>
-            <div>
-                
+            <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
+          </div>
+          <!-- card 2 -->
+          <div class="flex bg-white py-3 px-4 justify-between items-center rounded-xl">
+            <div class="flex gap-4 items-center">
+              <img class="w-6" src="./images/wallet1.png" alt="" />
+              <div>
+                <h3 class="font-semibold">Bank Deposit</h3>
+                <p class="secondary-text">Today 01:44 AM</p>
+              </div>
             </div>
-        </section>
+            <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
+          </div>
+          <!-- card 3 -->
+          <div class="flex bg-white py-3 px-4 justify-between items-center rounded-xl">
+            <div class="flex gap-4 items-center">
+              <img class="w-6" src="./images/wallet1.png" alt="" />
+              <div>
+                <h3 class="font-semibold">Mobile Recharge</h3>
+                <p class="secondary-text">Today 01:44 AM</p>
+              </div>
+            </div>
+            <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
+          </div>
+          <!-- card 4 -->
+          <div class="flex bg-white py-3 px-4 justify-between items-center rounded-xl">
+            <div class="flex gap-4 items-center">
+              <img class="w-6" src="./images/wallet1.png" alt="" />
+              <div>
+                <h3 class="font-semibold">Gas Bill</h3>
+                <p class="secondary-text">Today 01:44 AM</p>
+              </div>
+            </div>
+            <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
+          </div>
+        </div>
+      </section>
     </section>
   </body>
 </html>
