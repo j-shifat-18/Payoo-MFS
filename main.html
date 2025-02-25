@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>main file</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      .primary-clr {
+        background-color: #f4f5f7;
+      }
+      .secondary-clr {
+        background-color: #0874f2;
+      }
+
+      .outfit-font {
+        font-family: "Outfit", serif;
+      }
+
+      .secondary-text{
+        color: rgba(8, 8, 8, 0.5);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-800 outfit-font">
+    <section class="max-w-md min-h-screen mx-auto py-6 primary-clr">
+      <!-- navigation -->
+      <section class="bg-white">
+        <nav class="flex justify-between items-center px-6 py-4 border-b-2 border-[rgba(8,8,8,0.1)]">
+          <div class="flex items-center gap-4">
+            <img class="w-16" src="./images/Group.png" alt="" />
+            <div>
+              <p class="font-extrabold text-lg mb-1">$45000</p>
+              <p class="text-sm secondary-text">Available Balance</p>
+            </div>
+          </div>
+          <button class="btn rounded-lg secondary-text border-2">Log Out</button>
+        </nav>
+      </section>
+
+      <!-- service option section -->
+       <section class="py-6 px-6 bg-white rounded-b-3xl">
+        <div class="">
+            <h2 class="font-bold text-2xl mb-2">🔥Welcome to Payooo!</h2>
+            <p class="secondary-text">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+        </div>
+        <!-- cards -->
+         <div class="mt-6 grid grid-cols-3 gap-4">
+            <!-- card 1 -->
+            <div>
+                <button class="w-32 flex flex-col  py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2">
+                    <img class="w-6" src="./images/wallet1.png" alt="">
+                    <p class="secondary-text">Add Money</p>
+                </button>
+             </div>
+            <!-- card 2 -->
+             <div>
+                <button class="w-32 flex flex-col  py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2">
+                    <img class="w-6" src="./images/send1.png" alt="">
+                    <p class="secondary-text">Cashout</p>
+                </button>
+             </div>
+            <!-- card 3 -->
+             <div>
+                <button class="w-32 flex flex-col  py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2">
+                    <img class="w-6" src="./images/money1.png" alt="">
+                    <p class="secondary-text">Transfer Money</p>
+                </button>
+             </div>
+            <!-- card 4 -->
+             <div>
+                <button class="w-32 flex flex-col  py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2">
+                    <img class="w-6" src="./images/bonus1.png" alt="">
+                    <p class="secondary-text">Get Bonus</p>
+                </button>
+             </div>
+            <!-- card 5 -->
+             <div>
+                <button class="w-32 flex flex-col  py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2">
+                    <img class="w-6" src="./images/purse1.png" alt="">
+                    <p class="secondary-text">Pay Bill</p>
+                </button>
+             </div>
+            <!-- card 6 -->
+             <div>
+                <button class="w-32 flex flex-col  py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2">
+                    <img class="w-6" src="./images/transaction1.png" alt="">
+                    <p class="secondary-text">Transactions</p>
+                </button>
+             </div>
+         </div>
+       </section>
+
+       <!-- latest payment section -->
+        <section class="px-6 mt-6 mb-10">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="font-semibold text-lg">Latest Payment</h3>
+                <p class="text-sm secondary-text">View All</p>
+            </div>
+            <div>
+                
+            </div>
+        </section>
+    </section>
+  </body>
+</html>
