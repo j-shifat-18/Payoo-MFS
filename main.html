@@ -48,7 +48,7 @@
           <div class="flex items-center gap-4">
             <img class="w-16" src="./images/Group.png" alt="" />
             <div>
-              <p class="font-extrabold text-lg mb-1">$45000</p>
+              <p class="font-extrabold text-lg mb-1">$ <span id="main-balance">45000</span></p>
               <p class="text-sm secondary-text">Available Balance</p>
             </div>
           </div>
@@ -135,7 +135,9 @@
         <!-- cards -->
         <div class="grid gap-4">
           <!-- card 1 -->
-          <div class="flex bg-white py-3 px-4 justify-between items-center rounded-xl">
+          <div
+            class="flex bg-white py-3 px-4 justify-between items-center rounded-xl"
+          >
             <div class="flex gap-4 items-center">
               <img class="w-6" src="./images/wallet1.png" alt="" />
               <div>
@@ -146,7 +148,9 @@
             <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
           </div>
           <!-- card 2 -->
-          <div class="flex bg-white py-3 px-4 justify-between items-center rounded-xl">
+          <div
+            class="flex bg-white py-3 px-4 justify-between items-center rounded-xl"
+          >
             <div class="flex gap-4 items-center">
               <img class="w-6" src="./images/wallet1.png" alt="" />
               <div>
@@ -157,7 +161,9 @@
             <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
           </div>
           <!-- card 3 -->
-          <div class="flex bg-white py-3 px-4 justify-between items-center rounded-xl">
+          <div
+            class="flex bg-white py-3 px-4 justify-between items-center rounded-xl"
+          >
             <div class="flex gap-4 items-center">
               <img class="w-6" src="./images/wallet1.png" alt="" />
               <div>
@@ -168,7 +174,9 @@
             <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
           </div>
           <!-- card 4 -->
-          <div class="flex bg-white py-3 px-4 justify-between items-center rounded-xl">
+          <div
+            class="flex bg-white py-3 px-4 justify-between items-center rounded-xl"
+          >
             <div class="flex gap-4 items-center">
               <img class="w-6" src="./images/wallet1.png" alt="" />
               <div>
@@ -180,6 +188,68 @@
           </div>
         </div>
       </section>
+
+      <!-- Add money section -->
+      <section class="px-6 mt-6 mb-10">
+        <h2 class="font-semibold text-lg mb-4">Add Money</h2>
+        <!-- Add money form -->
+        <div>
+          <div class="flex-col lg:flex-row-reverse">
+            <div
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-xl"
+            >
+              <form class="card-body">
+                <fieldset class="fieldset space-y-1">
+
+                  <legend class="fieldset-label secondary-text text-base ">Select bank</legend>
+                  <select class="select rounded-3xl border-none primary-clr">
+                    <option disabled selected>Select Bank</option>
+                    <option>UCB</option>
+                    <option>Islami Bank</option>
+                    <option>Pubali Bank</option>
+                    <option>Bkash</option>
+                  </select>
+
+                  <label class="fieldset-label secondary-text text-base ">Bank Account Number</label>
+                  <input
+                    id="account-number"
+                    type="text"
+                    class="input rounded-3xl border-none primary-clr"
+                    placeholder="Enter 11 digit account number"
+                    required
+                  />
+                  <label class="fieldset-label secondary-text text-base ">Amount to Add</label>
+                  <input
+                    id="amount"
+                    type="number"
+                    class="input rounded-3xl border-none primary-clr"
+                    placeholder="Add Amount to withdraw"
+                    required
+                  />
+                  <label class="fieldset-label secondary-text text-base ">Pin Number</label>
+                  <input
+                    id="pin"
+                    type="text"
+                    class="input rounded-3xl border-none primary-clr"
+                    placeholder="Enter 4 digit pin number"
+                    required
+                  />
+                  <div><a class="link link-hover text-sm">Forgot password?</a></div>
+                  <button
+                    id="add-money-btn"
+                    class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none"
+                  >
+                  Add Money
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
+
+
+    <script src="./script/addMoney.js"></script>
   </body>
 </html>
