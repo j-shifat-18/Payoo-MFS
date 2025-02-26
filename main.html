@@ -68,20 +68,20 @@
           </p>
         </div>
         <!-- cards -->
-        <div class="mt-6 grid grid-cols-3 gap-4">
+        <div class="mt-6 grid grid-cols-3 gap-2">
           <!-- card 1 -->
-          <div>
+          <div id="addmoney-card">
             <button
-              class="w-32 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
+              class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/wallet1.png" alt="" />
               <p class="secondary-text">Add Money</p>
             </button>
           </div>
           <!-- card 2 -->
-          <div>
+          <div id="cashout-card">
             <button
-              class="w-32 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
+              class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/send1.png" alt="" />
               <p class="secondary-text">Cashout</p>
@@ -90,7 +90,7 @@
           <!-- card 3 -->
           <div>
             <button
-              class="w-32 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
+              class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/money1.png" alt="" />
               <p class="secondary-text">Transfer Money</p>
@@ -99,7 +99,7 @@
           <!-- card 4 -->
           <div>
             <button
-              class="w-32 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
+              class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/bonus1.png" alt="" />
               <p class="secondary-text">Get Bonus</p>
@@ -108,7 +108,7 @@
           <!-- card 5 -->
           <div>
             <button
-              class="w-32 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
+              class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/purse1.png" alt="" />
               <p class="secondary-text">Pay Bill</p>
@@ -117,7 +117,7 @@
           <!-- card 6 -->
           <div>
             <button
-              class="w-32 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
+              class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/transaction1.png" alt="" />
               <p class="secondary-text">Transactions</p>
@@ -127,7 +127,7 @@
       </section>
 
       <!-- latest payment section -->
-      <section class="px-6 mt-6 mb-10">
+      <section id="latest-payment" class="px-6 mt-6 mb-10">
         <div class="flex justify-between items-center mb-4">
           <h3 class="font-semibold text-lg">Latest Payment</h3>
           <p class="text-sm secondary-text">View All</p>
@@ -190,19 +190,19 @@
       </section>
 
       <!-- Add money section -->
-      <section class="px-6 mt-6 mb-10">
+      <section id="addmoney" class="px-6 mt-6 mb-10">
         <h2 class="font-semibold text-lg mb-4">Add Money</h2>
         <!-- Add money form -->
         <div>
           <div class="flex-col lg:flex-row-reverse">
             <div
-              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-xl"
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-xl mx-auto"
             >
               <form class="card-body">
                 <fieldset class="fieldset space-y-1">
 
                   <legend class="fieldset-label secondary-text text-base ">Select bank</legend>
-                  <select class="select rounded-3xl border-none primary-clr">
+                  <select class="select rounded-3xl border-none primary-clr" required>
                     <option disabled selected>Select Bank</option>
                     <option>UCB</option>
                     <option>Islami Bank</option>
@@ -213,7 +213,7 @@
                   <label class="fieldset-label secondary-text text-base ">Bank Account Number</label>
                   <input
                     id="account-number"
-                    type="text"
+                    type="number"
                     class="input rounded-3xl border-none primary-clr"
                     placeholder="Enter 11 digit account number"
                     required
@@ -229,7 +229,7 @@
                   <label class="fieldset-label secondary-text text-base ">Pin Number</label>
                   <input
                     id="pin"
-                    type="text"
+                    type="number"
                     class="input rounded-3xl border-none primary-clr"
                     placeholder="Enter 4 digit pin number"
                     required
@@ -247,9 +247,62 @@
           </div>
         </div>
       </section>
+
+      <!-- Cash out section -->
+      <section id="cashout" class="px-6 mt-6 mb-10">
+        <h2 class="font-semibold text-lg mb-4">Cash Out</h2>
+        <!-- Add money form -->
+        <div>
+          <div class="flex-col lg:flex-row-reverse">
+            <div
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-xl mx-auto"
+            >
+              <form class="card-body">
+                <fieldset class="fieldset space-y-1">
+                  <label class="fieldset-label secondary-text text-base ">Agent Number</label>
+                  <input
+                    id="cashout-number"
+                    type="number"
+                    class="input rounded-3xl border-none primary-clr"
+                    placeholder="Enter 11 digit number"
+                    required
+                  />
+                  <label class="fieldset-label secondary-text text-base ">Amount</label>
+                  <input
+                    id="cashout-amount"
+                    type="number"
+                    class="input rounded-3xl border-none primary-clr"
+                    placeholder="Enter amount to withdraw"
+                    required
+                  />
+                  <label class="fieldset-label secondary-text text-base ">Pin Number</label>
+                  <input
+                    id="cashout-pin"
+                    type="number"
+                    class="input rounded-3xl border-none primary-clr"
+                    placeholder="Enter 4 digit pin number"
+                    required
+                  />
+                  <div><a class="link link-hover text-sm">Forgot password?</a></div>
+                  <button
+                    id="cashout-btn"
+                    class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none"
+                  >
+                  Withdraw Money
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </section>
 
 
     <script src="./script/addMoney.js"></script>
+    <script src="./script/toogle.js"></script>
+    <script src="./script/cashOut.js"></script>
   </body>
 </html>
