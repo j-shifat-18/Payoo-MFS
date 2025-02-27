@@ -48,7 +48,9 @@
           <div class="flex items-center gap-4">
             <img class="w-16" src="./images/Group.png" alt="" />
             <div>
-              <p class="font-extrabold text-lg mb-1">$ <span id="main-balance">45000</span></p>
+              <p class="font-extrabold text-lg mb-1">
+                $ <span id="main-balance">45000</span>
+              </p>
               <p class="text-sm secondary-text">Available Balance</p>
             </div>
           </div>
@@ -70,8 +72,9 @@
         <!-- cards -->
         <div class="mt-6 grid grid-cols-3 gap-2">
           <!-- card 1 -->
-          <div id="addmoney-card">
+          <div>
             <button
+              id="addmoney-card"
               class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/wallet1.png" alt="" />
@@ -79,8 +82,9 @@
             </button>
           </div>
           <!-- card 2 -->
-          <div id="cashout-card">
+          <div>
             <button
+              id="cashout-card"
               class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/send1.png" alt="" />
@@ -200,9 +204,13 @@
             >
               <form class="card-body">
                 <fieldset class="fieldset space-y-1">
-
-                  <legend class="fieldset-label secondary-text text-base ">Select bank</legend>
-                  <select class="select rounded-3xl border-none primary-clr" required>
+                  <legend class="fieldset-label secondary-text text-base">
+                    Select bank
+                  </legend>
+                  <select
+                    class="select rounded-3xl border-none primary-clr"
+                    required
+                  >
                     <option disabled selected>Select Bank</option>
                     <option>UCB</option>
                     <option>Islami Bank</option>
@@ -210,7 +218,9 @@
                     <option>Bkash</option>
                   </select>
 
-                  <label class="fieldset-label secondary-text text-base ">Bank Account Number</label>
+                  <label class="fieldset-label secondary-text text-base"
+                    >Bank Account Number</label
+                  >
                   <input
                     id="account-number"
                     type="number"
@@ -218,7 +228,9 @@
                     placeholder="Enter 11 digit account number"
                     required
                   />
-                  <label class="fieldset-label secondary-text text-base ">Amount to Add</label>
+                  <label class="fieldset-label secondary-text text-base"
+                    >Amount to Add</label
+                  >
                   <input
                     id="amount"
                     type="number"
@@ -226,7 +238,9 @@
                     placeholder="Add Amount to withdraw"
                     required
                   />
-                  <label class="fieldset-label secondary-text text-base ">Pin Number</label>
+                  <label class="fieldset-label secondary-text text-base"
+                    >Pin Number</label
+                  >
                   <input
                     id="pin"
                     type="number"
@@ -234,12 +248,14 @@
                     placeholder="Enter 4 digit pin number"
                     required
                   />
-                  <div><a class="link link-hover text-sm">Forgot password?</a></div>
+                  <div>
+                    <a class="link link-hover text-sm">Forgot password?</a>
+                  </div>
                   <button
                     id="add-money-btn"
                     class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none"
                   >
-                  Add Money
+                    Add Money
                   </button>
                 </fieldset>
               </form>
@@ -259,7 +275,9 @@
             >
               <form class="card-body">
                 <fieldset class="fieldset space-y-1">
-                  <label class="fieldset-label secondary-text text-base ">Agent Number</label>
+                  <label class="fieldset-label secondary-text text-base"
+                    >Agent Number</label
+                  >
                   <input
                     id="cashout-number"
                     type="number"
@@ -267,7 +285,9 @@
                     placeholder="Enter 11 digit number"
                     required
                   />
-                  <label class="fieldset-label secondary-text text-base ">Amount</label>
+                  <label class="fieldset-label secondary-text text-base"
+                    >Amount</label
+                  >
                   <input
                     id="cashout-amount"
                     type="number"
@@ -275,7 +295,9 @@
                     placeholder="Enter amount to withdraw"
                     required
                   />
-                  <label class="fieldset-label secondary-text text-base ">Pin Number</label>
+                  <label class="fieldset-label secondary-text text-base"
+                    >Pin Number</label
+                  >
                   <input
                     id="cashout-pin"
                     type="number"
@@ -283,12 +305,14 @@
                     placeholder="Enter 4 digit pin number"
                     required
                   />
-                  <div><a class="link link-hover text-sm">Forgot password?</a></div>
+                  <div>
+                    <a class="link link-hover text-sm">Forgot password?</a>
+                  </div>
                   <button
                     id="cashout-btn"
                     class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none"
                   >
-                  Withdraw Money
+                    Withdraw Money
                   </button>
                 </fieldset>
               </form>
@@ -296,10 +320,7 @@
           </div>
         </div>
       </section>
-
-
     </section>
-
 
     <script src="./script/addMoney.js"></script>
     <script src="./script/toogle.js"></script>
