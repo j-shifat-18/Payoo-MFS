@@ -94,6 +94,7 @@
           <!-- card 3 -->
           <div>
             <button
+              id="transfermoney-card"
               class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/money1.png" alt="" />
@@ -103,6 +104,7 @@
           <!-- card 4 -->
           <div>
             <button
+            id="getbonus-card"
               class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/bonus1.png" alt="" />
@@ -112,6 +114,7 @@
           <!-- card 5 -->
           <div>
             <button
+            id="paybill-card"
               class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/purse1.png" alt="" />
@@ -121,6 +124,7 @@
           <!-- card 6 -->
           <div>
             <button
+            id="transaction-history-card"
               class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/transaction1.png" alt="" />
@@ -320,10 +324,237 @@
           </div>
         </div>
       </section>
+
+      <!-- Transfer money section -->
+      <section id="transfermoney" class="px-6 mt-6 mb-10">
+        <h2 class="font-semibold text-lg mb-4">Transfer Money</h2>
+        <!-- Transfer Money form -->
+        <div>
+          <div class="flex-col lg:flex-row-reverse">
+            <div
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-xl mx-auto"
+            >
+              <form class="card-body">
+                <fieldset class="fieldset space-y-1">
+                  <label class="fieldset-label secondary-text text-base"
+                    >User Account Number</label
+                  >
+                  <input
+                    id="cashout-number"
+                    type="number"
+                    class="input rounded-3xl border-none primary-clr"
+                    placeholder="Enter 11 digit number"
+                    required
+                  />
+                  <label class="fieldset-label secondary-text text-base"
+                    >Amount</label
+                  >
+                  <input
+                    id="cashout-amount"
+                    type="number"
+                    class="input rounded-3xl border-none primary-clr"
+                    placeholder="Enter amount to transfer"
+                    required
+                  />
+                  <label class="fieldset-label secondary-text text-base"
+                    >Pin Number</label
+                  >
+                  <input
+                    id="cashout-pin"
+                    type="number"
+                    class="input rounded-3xl border-none primary-clr"
+                    placeholder="Enter 4 digit pin number"
+                    required
+                  />
+                  <div>
+                    <a class="link link-hover text-sm">Forgot password?</a>
+                  </div>
+                  <button
+                    id="cashout-btn"
+                    class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none"
+                  >
+                  Send Now
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Get Bonus -->
+      <section id="getbonus" class="px-6 mt-6 mb-10">
+        <h2 class="font-semibold text-lg mb-4">Get Bonus</h2>
+        <!-- Get Bonus form -->
+        <div>
+          <div class="flex-col lg:flex-row-reverse">
+            <div
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-xl mx-auto"
+            >
+              <form class="card-body">
+                <fieldset class="fieldset space-y-1">
+                  <label class="fieldset-label secondary-text text-base"
+                    >Enter Bonus Coupon</label
+                  >
+                  <input
+                    id="cashout-number"
+                    type="text"
+                    class="input rounded-3xl border-none primary-clr"
+                    placeholder="Enter your coupon"
+                    required
+                  />
+                  <button
+                    id="cashout-btn"
+                    class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none"
+                  >
+                  Get Bonus
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pay Bill section -->
+      <section id="paybill" class="px-6 mt-6 mb-10">
+        <h2 class="font-semibold text-lg mb-4">Pay Bill</h2>
+        <!-- Pay Bill form -->
+        <div>
+          <div class="flex-col lg:flex-row-reverse">
+            <div
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-xl mx-auto"
+            >
+              <form class="card-body">
+                <fieldset class="fieldset space-y-1">
+                  <legend class="fieldset-label secondary-text text-base">
+                    Select To Pay
+                  </legend>
+                  <select
+                    class="select rounded-3xl border-none primary-clr"
+                    required
+                  >
+                    <option disabled selected>Select Bank</option>
+                    <option>UCB</option>
+                    <option>Islami Bank</option>
+                    <option>Pubali Bank</option>
+                    <option>Bkash</option>
+                  </select>
+
+                  <label class="fieldset-label secondary-text text-base"
+                    >Biller Account Number</label
+                  >
+                  <input
+                    id="account-number"
+                    type="number"
+                    class="input rounded-3xl border-none primary-clr"
+                    placeholder="Enter account number"
+                    required
+                  />
+                  <label class="fieldset-label secondary-text text-base"
+                    >Amount to Pay</label
+                  >
+                  <input
+                    id="amount"
+                    type="number"
+                    class="input rounded-3xl border-none primary-clr"
+                    placeholder="Add Amount to pay"
+                    required
+                  />
+                  <label class="fieldset-label secondary-text text-base"
+                    >Pin Number</label
+                  >
+                  <input
+                    id="pin"
+                    type="number"
+                    class="input rounded-3xl border-none primary-clr"
+                    placeholder="Enter 4 digit pin number"
+                    required
+                  />
+                  <div>
+                    <a class="link link-hover text-sm">Forgot password?</a>
+                  </div>
+                  <button
+                    id="add-money-btn"
+                    class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none"
+                  >
+                  Pay Now
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Transaction history -->
+      <section id="transaction-history" class="px-6 mt-6 mb-10">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="font-semibold text-lg">Transaction History</h3>
+          <p class="text-sm secondary-text">View All</p>
+        </div>
+        <!-- cards -->
+        <div class="grid gap-4">
+          <!-- card 1 -->
+          <div
+            class="flex bg-white py-3 px-4 justify-between items-center rounded-xl"
+          >
+            <div class="flex gap-4 items-center">
+              <img class="w-6" src="./images/wallet1.png" alt="" />
+              <div>
+                <h3 class="font-semibold">Electricity Bill</h3>
+                <p class="secondary-text">Today 01:44 AM</p>
+              </div>
+            </div>
+            <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
+          </div>
+          <!-- card 2 -->
+          <div
+            class="flex bg-white py-3 px-4 justify-between items-center rounded-xl"
+          >
+            <div class="flex gap-4 items-center">
+              <img class="w-6" src="./images/wallet1.png" alt="" />
+              <div>
+                <h3 class="font-semibold">Bank Deposit</h3>
+                <p class="secondary-text">Today 01:44 AM</p>
+              </div>
+            </div>
+            <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
+          </div>
+          <!-- card 3 -->
+          <div
+            class="flex bg-white py-3 px-4 justify-between items-center rounded-xl"
+          >
+            <div class="flex gap-4 items-center">
+              <img class="w-6" src="./images/wallet1.png" alt="" />
+              <div>
+                <h3 class="font-semibold">Mobile Recharge</h3>
+                <p class="secondary-text">Today 01:44 AM</p>
+              </div>
+            </div>
+            <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
+          </div>
+          <!-- card 4 -->
+          <div
+            class="flex bg-white py-3 px-4 justify-between items-center rounded-xl"
+          >
+            <div class="flex gap-4 items-center">
+              <img class="w-6" src="./images/wallet1.png" alt="" />
+              <div>
+                <h3 class="font-semibold">Gas Bill</h3>
+                <p class="secondary-text">Today 01:44 AM</p>
+              </div>
+            </div>
+            <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
+          </div>
+        </div>
+      </section>
+
     </section>
 
     <script src="./script/addMoney.js"></script>
     <script src="./script/toogle.js"></script>
     <script src="./script/cashOut.js"></script>
+    <script src="./utilities/utilities.js"></script>
   </body>
 </html>

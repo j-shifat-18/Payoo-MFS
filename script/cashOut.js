@@ -5,28 +5,27 @@ document
 
     const cashoutNumber = document.getElementById("cashout-number").value;
 
-    const cashoutAmount = document.getElementById("cashout-amount").value;
-    const convertedAmount = parseInt(cashoutAmount);
+    const convertedAmount = convertInputValueById("cashout-amount");
 
-    const pin = document.getElementById("cashout-pin").value;
+    const pin = convertInputValueById("cashout-pin");
 
-    const mainBalance = document.getElementById("main-balance").innerText;
-    const convertedBalance = parseInt(mainBalance);
+    const convertedBalance = convertInnerTextById("main-balance");
 
     if (cashoutNumber.length === 11) {
-      if (pin === "1234") {
-        if (cashoutAmount > 0) {
-          if (cashoutAmount > convertedBalance) {
+      if (pin === 1234) {
+        if (convertedAmount > 0) {
+          if (convertedAmount > convertedBalance) {
             alert("Insufficient balance");
           } else {
             const sum = convertedBalance - convertedAmount;
-            document.getElementById("main-balance").innerText = sum;
+            setInnerTextById("main-balance",sum);
 
-            document.getElementById("cashout-amount").value = "";
-            document.getElementById("cashout-pin").value = "";
+            setInputValueById("cashout-amount","");
+            setInputValueById("cashout-pin","");
             alert("Withdrawn money successfully.");
           }
         }
+        else alert("Invalid amount");
       } else {
         alert("Wrong password!");
       }

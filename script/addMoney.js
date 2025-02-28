@@ -5,22 +5,19 @@ document
 
     const accountNumber = document.getElementById("account-number").value;
 
-    const amount = document.getElementById("amount").value;
-    const convertedAmount = parseInt(amount);
+    const convertedAmount = convertInputValueById("amount");
 
-    const pin = document.getElementById("pin").value;
-
-    const mainBalance = document.getElementById("main-balance").innerText;
-    const convertedBalance = parseInt(mainBalance);
+    const pin = convertInputValueById("pin");
+   
+    const convertedBalance = convertInnerTextById("main-balance");
 
     if (accountNumber.length === 11) {
-      if (pin === "1234") {
-        if (amount > 0) {
+      if (pin === 1234) {
+        if (convertedAmount > 0) {
           const sum = convertedAmount + convertedBalance;
-          document.getElementById("main-balance").innerText = sum;
-          
-          document.getElementById("amount").value = "";
-          document.getElementById("pin").value = "";
+          setInnerTextById("main-balance",sum);
+          setInputValueById("amount","");
+          setInputValueById("pin","");
           alert("Added money successfully.");
         }
       } else {
