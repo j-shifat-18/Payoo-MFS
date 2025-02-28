@@ -104,7 +104,7 @@
           <!-- card 4 -->
           <div>
             <button
-            id="getbonus-card"
+              id="getbonus-card"
               class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/bonus1.png" alt="" />
@@ -114,7 +114,7 @@
           <!-- card 5 -->
           <div>
             <button
-            id="paybill-card"
+              id="paybill-card"
               class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/purse1.png" alt="" />
@@ -124,7 +124,7 @@
           <!-- card 6 -->
           <div>
             <button
-            id="transaction-history-card"
+              id="transaction-history-card"
               class="w-28 flex flex-col py-5 justify-start items-center text-center border-2 border-[rgba(8,8,8,0.1)] rounded-xl text-sm mt-2"
             >
               <img class="w-6" src="./images/transaction1.png" alt="" />
@@ -212,6 +212,7 @@
                     Select bank
                   </legend>
                   <select
+                    id="bank"
                     class="select rounded-3xl border-none primary-clr"
                     required
                   >
@@ -373,7 +374,7 @@
                     id="cashout-btn"
                     class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none"
                   >
-                  Send Now
+                    Send Now
                   </button>
                 </fieldset>
               </form>
@@ -407,7 +408,7 @@
                     id="cashout-btn"
                     class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none"
                   >
-                  Get Bonus
+                    Get Bonus
                   </button>
                 </fieldset>
               </form>
@@ -478,7 +479,7 @@
                     id="add-money-btn"
                     class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none"
                   >
-                  Pay Now
+                    Pay Now
                   </button>
                 </fieldset>
               </form>
@@ -494,62 +495,10 @@
           <p class="text-sm secondary-text">View All</p>
         </div>
         <!-- cards -->
-        <div class="grid gap-4">
-          <!-- card 1 -->
-          <div
-            class="flex bg-white py-3 px-4 justify-between items-center rounded-xl"
-          >
-            <div class="flex gap-4 items-center">
-              <img class="w-6" src="./images/wallet1.png" alt="" />
-              <div>
-                <h3 class="font-semibold">Electricity Bill</h3>
-                <p class="secondary-text">Today 01:44 AM</p>
-              </div>
-            </div>
-            <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
-          </div>
-          <!-- card 2 -->
-          <div
-            class="flex bg-white py-3 px-4 justify-between items-center rounded-xl"
-          >
-            <div class="flex gap-4 items-center">
-              <img class="w-6" src="./images/wallet1.png" alt="" />
-              <div>
-                <h3 class="font-semibold">Bank Deposit</h3>
-                <p class="secondary-text">Today 01:44 AM</p>
-              </div>
-            </div>
-            <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
-          </div>
-          <!-- card 3 -->
-          <div
-            class="flex bg-white py-3 px-4 justify-between items-center rounded-xl"
-          >
-            <div class="flex gap-4 items-center">
-              <img class="w-6" src="./images/wallet1.png" alt="" />
-              <div>
-                <h3 class="font-semibold">Mobile Recharge</h3>
-                <p class="secondary-text">Today 01:44 AM</p>
-              </div>
-            </div>
-            <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
-          </div>
-          <!-- card 4 -->
-          <div
-            class="flex bg-white py-3 px-4 justify-between items-center rounded-xl"
-          >
-            <div class="flex gap-4 items-center">
-              <img class="w-6" src="./images/wallet1.png" alt="" />
-              <div>
-                <h3 class="font-semibold">Gas Bill</h3>
-                <p class="secondary-text">Today 01:44 AM</p>
-              </div>
-            </div>
-            <img class="w-6 h-6" src="./images/icons8-ellipsis-30.png" alt="" />
-          </div>
+        <div id="transaction-container" class="grid gap-4">
+          
         </div>
       </section>
-
     </section>
 
     <script src="./script/addMoney.js"></script>

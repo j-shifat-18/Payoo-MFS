@@ -4,6 +4,8 @@ document
     event.preventDefault();
 
     const cashoutNumber = document.getElementById("cashout-number").value;
+    
+    const agentNumber = document.getElementById("cashout-number").value;
 
     const convertedAmount = convertInputValueById("cashout-amount");
 
@@ -18,14 +20,19 @@ document
             alert("Insufficient balance");
           } else {
             const sum = convertedBalance - convertedAmount;
-            setInnerTextById("main-balance",sum);
+            setInnerTextById("main-balance", sum);
 
-            setInputValueById("cashout-amount","");
-            setInputValueById("cashout-pin","");
+            setInputValueById("cashout-amount", "");
+            setInputValueById("cashout-pin", "");
             alert("Withdrawn money successfully.");
+            makeTransactionHistory(
+              "Cash Out",
+              convertedAmount,
+              agentNumber,
+              ""
+            );
           }
-        }
-        else alert("Invalid amount");
+        } else alert("Invalid amount");
       } else {
         alert("Wrong password!");
       }
